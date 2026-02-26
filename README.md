@@ -15,7 +15,7 @@ Two models are available:
 
 ## Published Article
 
-Lomax, J., Ford, R., Bar, I. (2026). Metabolomic modelling of sensory characteristics and consumer liking in papaya fruit. *Food Chemistry*. https://doi.org/10.1016/j.foodchem.2026.148323
+Lomax, J.,  Ford, R., Pico, J., Smyth, H., Bar, I. (2026). Metabolomic modelling of sensory characteristics and consumer liking in papaya fruit. *Food Chemistry*. https://doi.org/10.1016/j.foodchem.2026.148323
 
 ## Repository Contents
 
