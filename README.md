@@ -2,8 +2,6 @@
 
 A Shiny web application for predicting consumer liking scores in papaya fruit based on metabolite concentrations.
 
-**Live app:** https://joshlomax.shinyapps.io/papaya-flavour-predictor/
-
 ## About
 
 This app uses XGBoost machine learning models trained on sensory panel data from 125 untrained consumers across nine distinct papaya genotypes. Users can input metabolite concentrations and receive predicted consumer liking scores.
@@ -45,4 +43,4 @@ Funded by Hort Innovation grant AS19003 (Genetics of fruit sensory preferences).
 
 ---
 
-*Note: The XGBoost models and underlying research were developed independently. The Shiny application code was developed with the assistance of [Claude Sonnet 4.6](https://www.anthropic.com/claude) (Anthropic).*
+*Note: The Shiny application code was developed with the assistance of [Claude Sonnet 4.6](https://www.anthropic.com/claude) (Anthropic).*
