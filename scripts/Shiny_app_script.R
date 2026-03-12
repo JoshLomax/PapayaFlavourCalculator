@@ -6,6 +6,7 @@ library(ggplot2)
 library(openxlsx)
 library(xgboost)
 library(dplyr)
+library(waiter)
 
 # ── Locate the data directory ─────────────────────────────────────────────────
 # Handles running from project root or from scripts/ via runApp()
@@ -123,7 +124,7 @@ ui <- page_navbar(
     "Papaya Flavour Predictor",
     nav_spacer()
   ),
-  header = uiOutput("navbar_colour"),
+  header = tagList(uiOutput("navbar_colour"), use_waiter()),
   theme = bs_theme(
     bootswatch = "flatly",
     primary = "#FF8C00",
@@ -420,6 +421,15 @@ server <- function(input, output, session) {
     validation_messages = NULL,
     predictions = NULL,
     data_source = "manual"
+  )
+
+  # ── Waiter spinner (shown while predictions are running) ───────────────
+  w <- Waiter$new(
+    html = tagList(
+      spin_fading_circles(),
+      tags$p("Running prediction...", style = "color: white; margin-top: 10px;")
+    ),
+    color = "#E56717CC"
   )
 
   # ── Helpers to get current model config and ranges ─────────────────────
@@ -742,6 +752,9 @@ server <- function(input, output, session) {
     }
 
     config <- current_config()
+
+    w$show()
+    on.exit(w$hide())
 
     tryCatch({
       # Build prediction matrix with columns in the same order as training

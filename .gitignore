@@ -1,7 +1,7 @@
 # Exclude raw data and model training scripts
 data/
-scripts/general.R
 scripts/Sensory_analysis.R
+scripts/rsconnect
 .gitignore
 .DS_Store
 # Exclude R project and session files
