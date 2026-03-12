@@ -4,6 +4,7 @@ A Shiny web application for predicting consumer liking scores in papaya fruit ba
 
  [Shinyapps.io site](https://huj967-joshua0mark0hillis0lomax.shinyapps.io/papaya-flavour-predictor/)
 
+
 ## About
 
 This app uses XGBoost machine learning models trained on sensory panel data from 125 untrained consumers across nine distinct papaya genotypes. Users can input metabolite concentrations and receive predicted consumer liking scores.
@@ -14,7 +15,7 @@ Two models are available:
 
 ## Published Article
 
-Lomax, J., Ford, R., Bar, I. (2026). Metabolomic modelling of sensory characteristics and consumer liking in papaya fruit. *Food Chemistry*. https://doi.org/10.1016/j.foodchem.2026.148323
+Lomax, J.,  Ford, R., Pico, J., Smyth, H., Bar, I. (2026). Metabolomic modelling of sensory characteristics and consumer liking in papaya fruit. *Food Chemistry*. https://doi.org/10.1016/j.foodchem.2026.148323
 
 ## Repository Contents
 
